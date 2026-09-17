@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.ecom-profit.crm-aftersales-sync</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/Shared/ecom-profit/projects/crm/scripts/run_crm_aftersales_daily.sh</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/Shared/ecom-profit/projects/crm</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>20</integer></dict>
+		<dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>20</integer></dict>
+		<dict><key>Hour</key><integer>19</integer><key>Minute</key><integer>20</integer></dict>
+	</array>
+	<key>StandardOutPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm-aftersales-sync.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm-aftersales-sync.err.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>ECOM_DEPLOY_ROOT</key><string>/Users/Shared/ecom-profit</string>
+		<key>ECOM_PROJECT_ROOT</key><string>/Users/Shared/ecom-profit/projects/crm</string>
+		<key>PYTHON_BIN</key><string>/Users/Shared/ecom-profit/projects/ecom-profit-app/.venv/bin/python</string>
+		<key>PATH</key><string>/Users/yyerybz/.local/bin:/opt/homebrew/opt/mysql@8.0/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+	</dict>
+</dict>
+</plist>

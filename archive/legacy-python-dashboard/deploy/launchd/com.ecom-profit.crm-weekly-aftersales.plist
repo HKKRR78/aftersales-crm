@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.ecom-profit.crm-weekly-aftersales</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/Shared/ecom-profit/projects/crm/scripts/run_crm_weekly_aftersales_pipeline.sh</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/Shared/ecom-profit/projects/crm</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Weekday</key>
+		<integer>1</integer>
+		<key>Hour</key>
+		<integer>9</integer>
+		<key>Minute</key>
+		<integer>30</integer>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm_weekly_aftersales_service.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm_weekly_aftersales_service.err.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>DWS_DISABLE_KEYCHAIN</key>
+		<string>1</string>
+		<key>DWS_CONFIG_DIR</key>
+		<string>/Users/yyerybz/.dws-config</string>
+		<key>ECOM_DEPLOY_ROOT</key>
+		<string>/Users/Shared/ecom-profit</string>
+		<key>WPS_MIN_FILE_AGE_SECONDS</key>
+		<string>600</string>
+		<key>WAIT_FOR_LOCK_SECONDS</key>
+		<string>3600</string>
+	</dict>
+</dict>
+</plist>

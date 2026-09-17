@@ -1,0 +1,1 @@
+run_crm_weekly_aftersales_pipeline.sh

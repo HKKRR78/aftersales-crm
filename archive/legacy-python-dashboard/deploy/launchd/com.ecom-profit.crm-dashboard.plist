@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.ecom-profit.crm-dashboard</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/Shared/ecom-profit/projects/crm/run_crm_dashboard.sh</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/Shared/ecom-profit/projects/crm</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>StandardOutPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm_dashboard.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm_dashboard.err.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>ECOM_DEPLOY_ROOT</key>
+		<string>/Users/Shared/ecom-profit</string>
+		<key>ECOM_PROJECT_ROOT</key>
+		<string>/Users/Shared/ecom-profit/projects/crm</string>
+		<key>CRM_HOST</key>
+        <string>127.0.0.1</string>
+		<key>CRM_PORT</key>
+        <string>18088</string>
+        <key>CRM_RUNTIME_ROOT</key>
+        <string>/Users/Shared/ecom-profit/projects/crm/runtime/crm_dashboard</string>
+		<key>CRM_XLSX_EXPORT_ENABLED</key>
+		<string>0</string>
+		<key>CRM_PROGRESS_ALERT_MIN_EXCESS</key>
+		<string>3</string>
+		<key>CRM_PROGRESS_ALERT_MIN_DELTA_PP</key>
+		<string>0.3</string>
+	</dict>
+</dict>
+</plist>

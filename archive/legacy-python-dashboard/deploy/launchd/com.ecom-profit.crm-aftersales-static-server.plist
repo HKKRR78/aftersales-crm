@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.ecom-profit.crm-aftersales-static-server</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/python3</string>
+		<string>-m</string>
+		<string>http.server</string>
+		<string>8787</string>
+		<string>--bind</string>
+		<string>192.168.3.135</string>
+		<string>--directory</string>
+		<string>/Users/Shared/ecom-profit/projects/crm/web/aftersales</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>StandardOutPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm_aftersales_static_server.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/Shared/ecom-profit/projects/crm/logs/crm_aftersales_static_server.err.log</string>
+	<key>WorkingDirectory</key>
+	<string>/Users/Shared/ecom-profit/projects/crm</string>
+</dict>
+</plist>

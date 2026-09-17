@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+node_modules/
+.next/
+*.tsbuildinfo
+.env
+.env.local
+.env.production
+next-env.d.ts
+
+# Production-only secrets and mutable runtime data.
+config/*
+!config/aftersales-exclusion-rules.json
+!config/aftersales-problem-rules.json
+runtime/
+logs/
+outputs/
+exports/
+state/
+restore/

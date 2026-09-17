@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.company.aftersales-dashboard</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/Shared/ecom-profit-db-mcp/runtime/node/bin/node</string>
+    <string>/Users/yyerybz/Codex/aftersales-dashboard-current/server.js</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/yyerybz/Codex/aftersales-dashboard-current</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>NODE_ENV</key>
+    <string>production</string>
+    <key>HOSTNAME</key>
+    <string>127.0.0.1</string>
+    <key>PORT</key>
+    <string>18091</string>
+    <key>MYSQL_HOST</key>
+    <string>127.0.0.1</string>
+    <key>MYSQL_PORT</key>
+    <string>3306</string>
+    <key>MYSQL_USER</key>
+    <string>root</string>
+    <key>MYSQL_DATABASE</key>
+    <string>ecom_profit</string>
+    <key>MYSQL_CONNECTION_LIMIT</key>
+    <string>6</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <dict>
+    <key>SuccessfulExit</key>
+    <false/>
+  </dict>
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/yyerybz/Codex/logs/aftersales-dashboard.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/yyerybz/Codex/logs/aftersales-dashboard.error.log</string>
+</dict>
+</plist>
